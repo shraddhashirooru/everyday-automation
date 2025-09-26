@@ -2,7 +2,8 @@ import os
 from datetime import datetime
 
 def attendance_log(name,timestamp):
-    """Logs attendance of a person with a timestamp.
+    """
+    Logs attendance of a person with a timestamp.
 
     Steps:
     1. Check if the attendance file ("example.txt") exists.
@@ -15,7 +16,8 @@ def attendance_log(name,timestamp):
 
     Args:
         name (str): Name of the person attending.
-        timestamp (str): The timestamp of attendance in string format."""
+        timestamp (str): The timestamp of attendance in string format.
+    """
     new_entry = f"{name} attended the meeting at {timestamp}\n"
     if os.path.exists("example.txt"):
         # File exists, read current content and prepend new entry
